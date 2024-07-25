@@ -16,6 +16,7 @@ pipeline {
               conda --version
               mkdir -p target
               conda build . --output-folder target
+              cp $SRC_DIR/report.html .
               ls -la
               ls target
               """
