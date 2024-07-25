@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
               agent {
                    docker {
-                     image 'condaforge/mambaforge:24.3.0-0'
+                     image 'mcr.microsoft.com/devcontainers/anaconda'
                      reuseNode true
                  }
                 }
