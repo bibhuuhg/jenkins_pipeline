@@ -46,7 +46,7 @@ test:
     - pytest-cov
     - pytest-html
   commands:
-    - pytest tests -junitxml=report.xml  --html=report.html
+    - pytest tests --html=report.html
 
 about:
   home: https://github.com/bibhuugh/jenkins_pipeline
