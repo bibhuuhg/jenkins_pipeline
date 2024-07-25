@@ -45,7 +45,7 @@ test:
     - pytest
     - pytest-cov
   commands:
-    - pytest tests --cov=src --cov-report xml:./xunit-reports/coverage.xml -junitxml=./xunit-reports/unitest.xml
+    - pytest tests 
 
 about:
   home: https://github.com/bibhuugh/jenkins_pipeline
