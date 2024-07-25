@@ -44,8 +44,10 @@ test:
   requires:
     - pytest
     - pytest-cov
+    - pytest-html
+    - pytest-junitxml
   commands:
-    - pytest tests 
+    - pytest tests -junitxml=report.xml  --html=report.html
 
 about:
   home: https://github.com/bibhuugh/jenkins_pipeline
