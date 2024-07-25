@@ -46,7 +46,7 @@ test:
     - pytest-cov
     - pytest-html
   commands:
-    - PYTHONPATH=./src pytest tests --html=report.html
+    - PYTHONPATH=./src pytest tests --cov-report term-missing
 
 about:
   home: https://github.com/bibhuugh/jenkins_pipeline
