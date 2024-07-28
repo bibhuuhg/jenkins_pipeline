@@ -21,5 +21,27 @@ pipeline {
               """
             }
         }
+    stage('Run Tests')
+    {
+        parallel {
+            stage('Prallel 1')
+            {
+                agent any
+                step {
+                    echo "Hello 1"
+                }
+            }
+            stage('Prallel 2')
+            {
+                agent any
+                step {
+                    echo "Hello 2"
+                }
+            }
+
+        }
+    }
+
+
     }
 }
