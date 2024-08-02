@@ -45,7 +45,10 @@ pipeline {
     {
         agent any 
         steps{
-            input 'deployment to prod '
+            timeout(2) {
+               input 'deployment to prod '
+            }   
+            
         }
         
     }
