@@ -35,7 +35,7 @@ pipeline {
             {
                 agent any
                 steps {
-                    echo "Hello 2"
+                    echo "Hello 3"
                 }
             }
 
