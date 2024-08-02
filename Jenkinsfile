@@ -41,7 +41,22 @@ pipeline {
 
         }
     }
-
+    stage('approval')
+    {
+        agent any 
+        steps{
+            input 'deployment to prod '
+        }
+        
+    }
+    stage('prod-deployment')
+    {
+        agent any 
+        steps{
+            echo "Deployment Completed..."
+        }
+        
+    }
 
     }
 }
